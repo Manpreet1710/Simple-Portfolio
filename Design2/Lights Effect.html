@@ -1,0 +1,40 @@
+<!-- Java script can change html element attribute  -->
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>js can change html element attribute</title>
+		<style>
+			.lighting{
+				height: auto;
+				width: auto;
+				font-size: 2em;
+				text-shadow: 2px 3px 4px red, 4px 5px 6px blue;
+			}
+			button:hover{
+				background: yellow;
+				padding: 5px;
+				border: none;
+				transition: 2s ;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <p id="mydemo" style="color:red">Web developer</p>
+		
+		<button type="button" onclick="document.getElementById('mydemo').style.color='blue'">
+		
+			Color change
+		
+		</button> -->
+
+        <div class="lighting">
+        	<span><marquee  behavior="slide" scrollamount="30">Light-effect</marquee></span>
+        </div>
+		<button type="button" onclick="document.getElementById('myimg').src='1.jfif'">Turn on</button>
+
+		<img src="2.png" id="myimg" height="300px">
+
+        
+		<button type="button" onclick="document.getElementById('myimg').src='2.png'">Turn off</button>
+	</body>
+</html>
