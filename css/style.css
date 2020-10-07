@@ -17,15 +17,23 @@ html{scroll-behavior: smooth;}
 	display: grid;
 	/* -ms-grid-template-columns:repeat(1,20%)1fr; */
 	grid-template-columns:repeat(1,20%)1fr;
-
+}
+main{
+	display: flex;
+	justify-content: center;
+}
+.icons{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 .div1{
 	background:  rgba(0, 84, 186, 0.77);
 }
 .div2{
-	background: #8e9eab;  /* fallback for old browsers */
+	background:#fff; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(to right, #eef2f3, #8e9eab); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 header{
 	padding-top: 5px;
@@ -45,22 +53,23 @@ header h1{
 	text-indent:15px;
 	
 }
+.navbar{text-align: center;}
 ul{
 	width: auto;
 	height: auto;
-	margin-top: 30px;
+	margin-top: 3px;
 	line-height: 2.3rem;
-	text-align: center;
+	text-align: left;
 	list-style-position: inside;
 	list-style-type: none;
 	/* list-style-type: '✌'; */
 }
+ul li{
+	padding: 0 8px;
+}
 ul li a{
 	text-transform: capitalize;
 	text-decoration: none;
-}
-i{
-	padding-right: 10px;
 }
 a:hover{
 	color: #000;
@@ -99,6 +108,9 @@ footer p{
 	padding-left: 45%;
 	padding-top: 15px;
 }
+label i{
+	visibility: hidden;
+}
 @media(max-width: 768px){
 .div1{
 	grid-column: 1/ span 2;
@@ -109,13 +121,15 @@ footer p{
 .divcenter{
 	height: 70vh;
 }
+label i{
+	visibility: visible;
+}
 
 ul{
 	display: none;
 }
-#toggle:checked ~ ul{
-	display: block;
+.icons{
+	display: none;
 }
-
 
 }
