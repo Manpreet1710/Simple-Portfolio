@@ -12,17 +12,22 @@
 	<title>myportfolio</title>
 
 	<!-- Icon -->
-	<link rel="icon" href="Images/boy.png">
+	<link rel="icon" href="Images/2.png">
 
 	<!-- css -->
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- font-awesome -->
-	<link rel="stylesheet" href="Font-awesome Offline way/css/all.css">
+	<link rel="stylesheet" href="font-awesome/css/all.css">
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> -->
 </head>
+<body onload="myFun()">
+	<!-- For preloader -->
+	<div class="preloader">
+		<div class="loader">
 
-<body>
+		</div>
+	</div>
 	<section class="container">
 		<div class="div1">
 			<header>
@@ -43,13 +48,13 @@
 			</div>
 
 			<ul class="navbar">
-				<li><a href="#demo1">home</a>
+				<li><a href="index.html">home</a>
 				</li>
-				<li><a href="#demo2">myskills</a></li>
-				<li><a href="#">myproject</a></li>
-				<li><a href="#">myhobby</a></li>
-				<li><a href="Design2/index.html" target="_blank">about</a></li>
-				<li><a href="#">contactme</a></li>
+				<li id="myskills"><a href="#mySKills">myskills</a></li>
+				<li id="myproject"><a href="#myproject">myproject</a></li>
+				<li id="myhobby"><a href="#myhobby">myhobby</a></li>
+				<li id="about"><a href="#about" >about</a></li>
+				<li id="contactme"><a href="#contactme">contactme</a></li>
 			</ul>
 			</main>
 		</div>
@@ -58,13 +63,14 @@
 
 		<div class="div2">
 			<div class="divcenter" id="demo1">
-				<img src="Images/1.jpg" alt="not found" width=350px>
-				<article>
-					<h1>I am <span>Webdeveloper</span> and also <span>YOUTUBER,</span></h1>
-					<h1><span>FREELANCER</span> nd <span>BACK-END-DEVELOPER</span></h1>
+				<img src="Images/2.png" alt="not found" width=350px>
+				<article id="myskills">
+					<h1 id="h1">I am <span>Webdeveloper</span> and also <span>YOUTUBER,</span></h1>
+					<h1 id="h2"><span>FREELANCER</span> nd <span>BACK-END-DEVELOPER</span></h1>
 				</article>
 			</div>
 
+		
 
 			<div class="footer">
 				<footer>
@@ -75,10 +81,6 @@
 
 		</div>
 	</section>
-
-
 	<script src="js/index.js"></script>
-
 </body>
-
 </html>
